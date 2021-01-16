@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "271160023775",
+    "project_id": "rentalhelper-4dd49",
+    "storage_bucket": "rentalhelper-4dd49.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271160023775:android:e81ae677ccf63a1d86276a",
+        "android_client_info": {
+          "package_name": "com.example.debtapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271160023775-te4rmco3kucvocpjt5omhgp5l9vmdf96.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.debtapplication",
+            "certificate_hash": "68cb6c0b20675d30a0cadcfc08394c76241ac2ff"
+          }
+        },
+        {
+          "client_id": "271160023775-o2pc5l7qhplthr9k6493qo946dh55rnu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD40tqhtpZvQdp7xl45kpu1WxlObkPkHyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "271160023775-o2pc5l7qhplthr9k6493qo946dh55rnu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "271160023775-6eu0qkkhnb4nrilai9vam195th83j77l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "test.DebtProject"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

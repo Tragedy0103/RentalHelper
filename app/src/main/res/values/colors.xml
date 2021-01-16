@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="darkgray">#ff2B2B2B</color>
+    <color name="lightgray">#575757</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0027FF</color>
+    <color name="white1">#B3FFFFFF</color>
+    <color name="nocolor">#00ffffff</color>
+    <color name="playstationBlue">#2944F3</color>
+    <color name="switchRed">#BC1C0D</color>
+    <color name="xboxGreen">#61AC0C</color>
+    <color name="darkBlue">#616D7A</color>
+    <color name="textColor">#F1C833</color>
+    <color name="messageColor">#E8E0BB</color>
+    <color name="timeColor">#B0012521</color>
+    <color name="tab">#B5185B</color>
+
+
+
+
+
+    <color name="TextDataColor">#227c9d</color>
+    <color name="TextMajorColor">#fef9ef</color>
+    <color name="TextMainColor">#227c9d</color>
+    <color name="TextSecondColor">#495867</color>
+    <color name="TextCardColor">#227c9d</color>
+    <color name="TagBackColor">#9917C3B2</color>
+    <color name="CardBackground">#fef9ef</color>
+    <color name="InnerCardBackground">#ffffff</color>
+    <color name="ButtonColor">#FFAA4F</color>
+    <color name="TitleBackgroundColor">#FFAA4F</color>
+    <color name="DrawerBackground">#FFF0D3</color>
+    <color name="SectionBackgroundColor">#83FF8C00</color>
+    <color name="MainBackground">#fef9ef</color>
+    <color name="EditTextColor">#F22C3535</color>
+    <color name="EditTextHintColor">#A6495867</color>
+    <color name="TabLineColor">#FE6D73</color>
+    <color name="DrawerTitleTextColor">#FFECC6</color>
+    <color name="BackgroundMask">#B0353535</color>
+
+
+</resources>
+
+<!--    C99E69-->
+
+<!--<color name="TextMajorColor">#fef9ef</color>-->
+<!--<color name="TextMainColor">#227c9d</color>-->
+<!--<color name="TextSecondColor">#495867</color>-->
+<!--<color name="TextCardColor">#227c9d</color>-->
+<!--<color name="TagBackColor">#9917C3B2</color>-->
+<!--<color name="cardview_backgroud_end">#fef9ef</color>-->
+<!--<color name="incardview_backgroud">#ffffff</color>-->
+<!--<color name="purple_500">#DFB064</color>-->
+<!--<color name="darkDarkBlue">#ffcb77</color>-->
+<!--<color name="main_backgroud_start">#fef9ef</color>-->
+<!--<color name="main_backgroud_end">#fef9ef</color>-->

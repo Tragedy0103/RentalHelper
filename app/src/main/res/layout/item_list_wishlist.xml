@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="15dp"
+    android:layout_marginTop="5dp"
+    app:cardElevation="1dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:background="@color/InnerCardBackground">
+        <TextView
+            android:id="@+id/tvNameStr"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="名稱："
+            android:textColor="@color/TextMainColor"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/tvNameStr"
+            android:textColor="@color/TextMainColor"
+            app:layout_constraintTop_toTopOf="@id/tvNameStr" />
+
+        <TextView
+            android:id="@+id/tvValueStr"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="權重："
+            android:textColor="@color/TextMainColor"
+            app:layout_constraintTop_toTopOf="@id/tvName"
+            app:layout_constraintStart_toEndOf="@id/tvName"/>
+
+        <TextView
+            android:id="@+id/tvValue"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/TextMainColor"
+            app:layout_constraintStart_toEndOf="@id/tvValueStr"
+            app:layout_constraintTop_toTopOf="@id/tvValueStr" />
+
+        <TextView
+            android:id="@+id/tvAmountStr"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textColor="@color/TextMainColor"
+            android:layout_marginStart="5dp"
+            android:text="數量："
+            app:layout_constraintTop_toTopOf="@id/tvValue"
+            app:layout_constraintStart_toEndOf="@id/tvValue"/>
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/TextMainColor"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/tvAmountStr"
+            app:layout_constraintTop_toTopOf="@id/tvAmountStr" />
+
+        <ImageView
+            android:id="@+id/imgCancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="2dp"
+            android:src="@drawable/ic_action_cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

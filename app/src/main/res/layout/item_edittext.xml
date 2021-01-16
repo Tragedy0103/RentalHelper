@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/etItem"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColorHint="@color/white1"
+    android:textColor="@color/white"
+    android:background="@drawable/et_bg_selector"
+    android:inputType="textEmailAddress">
+</EditText>

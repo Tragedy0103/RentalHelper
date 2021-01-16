@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <id>etItem_1</id>
+    <id>etItem_2</id>
+    <id>etItem_3</id>
+    <id>etItem_4</id>
+    <id>etItem_5</id>
+    <item name="etItem_1" type="id">@id/etItem_1</item>
+    <item name="etItem_2" type="id">@id/etItem_2</item>
+    <item name="etItem_3" type="id">@id/etItem_3</item>
+    <item name="etItem_4" type="id">@id/etItem_4</item>
+    <item name="etItem_5" type="id">@id/etItem_5</item>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="190dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/InnerCardBackground"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:foreground="@drawable/ripple_effect">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imgProduct"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            fresco:actualImageScaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tvProductName"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginStart="5dp"
+                android:text="產品名稱"
+                android:textColor="@color/TextCardColor"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                app:layout_constraintStart_toStartOf="@+id/imgProduct"
+                app:layout_constraintTop_toBottomOf="@id/imgProduct" />
+        <LinearLayout
+            android:id="@+id/llProductType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:textSize="12sp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/tvProductName"
+            app:layout_constraintTop_toBottomOf="@id/tvProductName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

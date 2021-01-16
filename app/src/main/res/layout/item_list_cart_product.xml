@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:foreground="@drawable/ripple_effect"
+    app:layout_constraintCircleRadius="5dp"
+    tools:layout_editor_absoluteX="5dp"
+    tools:layout_editor_absoluteY="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/InnerCardBackground">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/imgProduct"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            fresco:actualImageScaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/TextMainColor"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/imgProduct"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvSeller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分類："
+            android:textColor="@color/TextMainColor"
+            app:layout_constraintStart_toStartOf="@+id/tvTradeMethods"
+            app:layout_constraintTop_toBottomOf="@id/tvTradeMethods" />
+
+        <LinearLayout
+            android:id="@+id/llType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/tvSeller"
+            app:layout_constraintTop_toTopOf="@id/tvSeller"
+            android:orientation="horizontal"/>
+
+        <TextView
+            android:id="@+id/tvMargin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩餘數量："
+            android:textColor="@color/TextMainColor"
+            app:layout_constraintStart_toStartOf="@+id/tvTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/TextMainColor"
+            app:layout_constraintTop_toTopOf="@id/tvMargin"
+            fresco:layout_constraintStart_toEndOf="@+id/tvMargin" />
+
+        <TextView
+            android:id="@+id/tvTradeMethods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交易模式："
+            android:textColor="@color/TextMainColor"
+            app:layout_constraintStart_toStartOf="@+id/tvMargin"
+            app:layout_constraintTop_toBottomOf="@id/tvMargin" />
+
+        <LinearLayout
+            android:id="@+id/llTradeMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@+id/tvTradeMethods"
+            app:layout_constraintTop_toBottomOf="@id/tvAmount"
+            android:orientation="horizontal"/>
+
+        <ImageView
+            android:id="@+id/imgSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:foreground="@drawable/ripple_effect"
+            android:src="@drawable/ic_action_set"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

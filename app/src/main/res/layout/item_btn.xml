@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.button.MaterialButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/btnItem"
+    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:textSize="18dp"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    app:backgroundTint="@color/nocolor"
+    app:cornerRadius="20dp"
+    app:strokeWidth="2dp"
+    app:strokeColor="@color/white1"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.121">
+
+</com.google.android.material.button.MaterialButton>

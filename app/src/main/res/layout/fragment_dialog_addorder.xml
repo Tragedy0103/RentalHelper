@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="550dp"
+    android:backgroundTint="@color/CardBackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clAddOrder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/TextCardColor"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
+                    
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvSalerInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/TextCardColor"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/salerInfo"
+                    android:textSize="20sp"
+                    app:layout_constraintHorizontal_bias="0.148"
+                    app:layout_constraintStart_toStartOf="@+id/tvTitle"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+                <LinearLayout
+                    android:id="@+id/llSalerInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="@+id/tvSalerInfo"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSalerInfo">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/TextCardColor"
+                            android:text="@string/ch_call"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tvNickName"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/TextDataColor"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/TextCardColor"
+                            android:text="@string/e_mail_"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tvEmail"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/TextDataColor"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/TextCardColor"
+                            android:text="@string/ch_phone"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tvPhone"
+                            android:textColor="@color/TextDataColor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/TextCardColor"
+                            android:text="@string/ch_address"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tvAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/TextDataColor"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvSaleMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/ch_exchangemode"
+                    android:textColor="@color/TextCardColor"
+                    android:textSize="24sp"
+                    app:layout_constraintHorizontal_bias="0.148"
+                    app:layout_constraintStart_toStartOf="@+id/tvSalerInfo"
+                    app:layout_constraintTop_toBottomOf="@+id/llSalerInfo" />
+
+                <Spinner
+                    android:id="@+id/spSaleMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvSaleMode"
+                    app:layout_constraintStart_toEndOf="@+id/tvSaleMode"
+                    app:layout_constraintTop_toTopOf="@+id/tvSaleMode" />
+
+                <TextView
+                    android:id="@+id/tvOnlyAmmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/ch_onlyAmmount"
+                    android:textSize="24sp"
+                    android:textColor="@color/TextCardColor"
+                    app:layout_constraintHorizontal_bias="0.148"
+                    app:layout_constraintStart_toStartOf="@+id/tvSaleMode"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSaleMode" />
+
+                <TextView
+                    android:id="@+id/tvOnlyAmmountNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/TextDataColor"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvOnlyAmmount"
+                    app:layout_constraintStart_toEndOf="@+id/tvOnlyAmmount"
+                    app:layout_constraintTop_toTopOf="@+id/tvOnlyAmmount" />
+
+                <TextView
+                    android:id="@+id/tvNeedAmmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/ch_needAmmount"
+                    android:textColor="@color/TextCardColor"
+                    android:textSize="24sp"
+                    app:layout_constraintHorizontal_bias="0.148"
+                    app:layout_constraintStart_toStartOf="@+id/tvOnlyAmmount"
+                    app:layout_constraintTop_toBottomOf="@+id/tvOnlyAmmount" />
+
+                <Spinner
+                    android:id="@+id/spNeedAmmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvNeedAmmount"
+                    app:layout_constraintStart_toEndOf="@+id/tvNeedAmmount"
+                    app:layout_constraintTop_toTopOf="@+id/tvNeedAmmount" />
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="價格"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    android:textColor="@color/TextCardColor"
+                    app:layout_constraintHorizontal_bias="0.148"
+                    app:layout_constraintStart_toStartOf="@+id/tvNeedAmmount"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNeedAmmount" />
+
+                <TextView
+                    android:id="@+id/tvTrideItems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="交換物"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    android:textColor="@color/TextCardColor"
+                    app:layout_constraintHorizontal_bias="0.148"
+                    app:layout_constraintStart_toStartOf="@+id/tvNeedAmmount"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNeedAmmount" />
+
+                <TextView
+                    android:id="@+id/tvPriceNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="32dp"
+                    android:visibility="gone"
+                    android:textColor="@color/TextDataColor"
+                    app:layout_constraintStart_toStartOf="@+id/tvPrice"
+                    app:layout_constraintTop_toBottomOf="@+id/tvPrice" />
+                <TextView
+                    android:id="@+id/tvWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/ch_weight"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    android:textColor="@color/TextCardColor"
+                    app:layout_constraintHorizontal_bias="0.148"
+                    app:layout_constraintStart_toStartOf="@+id/tvNeedAmmount"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTrideItems" />
+
+                <TextView
+                    android:id="@+id/tvWeightNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/TextDataColor"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvWeight"
+                    app:layout_constraintStart_toEndOf="@+id/tvWeight"
+                    app:layout_constraintTop_toTopOf="@+id/tvWeight" />
+                <TextView
+                    android:id="@+id/tvNeedWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/TextCardColor"
+                    android:text="@string/ch_needWeight"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    app:layout_constraintHorizontal_bias="0.148"
+                    app:layout_constraintStart_toStartOf="@+id/tvWeight"
+                    app:layout_constraintTop_toBottomOf="@+id/tvWeight" />
+
+                <TextView
+                    android:id="@+id/tvNeedWeightNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/TextDataColor"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvNeedWeight"
+                    app:layout_constraintStart_toEndOf="@+id/tvNeedWeight"
+                    app:layout_constraintTop_toTopOf="@+id/tvNeedWeight" />
+
+                <TextView
+                    android:id="@+id/tvCurrentWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/TextCardColor"
+                    android:text="@string/ch_currentWeight"
+                    android:textSize="15sp"
+                    android:visibility="gone"
+                    app:layout_constraintHorizontal_bias="0.148"
+                    app:layout_constraintStart_toStartOf="@+id/tvNeedWeight"
+                    app:layout_constraintTop_toBottomOf="@+id/tvNeedWeight" />
+
+                <TextView
+                    android:id="@+id/tvCurrentWeightNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/TextDataColor"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvCurrentWeight"
+                    app:layout_constraintStart_toEndOf="@+id/tvCurrentWeight"
+                    app:layout_constraintTop_toTopOf="@+id/tvCurrentWeight" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvTrideItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="@+id/tvCurrentWeight"
+                    app:layout_constraintTop_toBottomOf="@+id/tvCurrentWeightNum" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/ch_cancel" />
+
+                <Button
+                    android:id="@+id/btnConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/ButtonColor"
+                    android:text="@string/ch_confirm" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>
